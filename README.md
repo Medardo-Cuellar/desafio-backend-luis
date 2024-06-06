@@ -1,4 +1,6 @@
-# Desafio backend luis medardo
+# Backend RESTful API for blogging
+
+a project by Luis Medardo
 
 ## How to install
 
@@ -10,4 +12,4 @@
 - /user/:id
 - /auth/login
 - /posts
-- posts/:id
+- /posts/:id
