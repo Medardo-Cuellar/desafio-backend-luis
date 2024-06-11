@@ -5,8 +5,9 @@ const cors = require('cors');
 
 //middleware
 app.use(cors());
-app.use(express.json()); //primero va este porque el orden de los middlewares es importante para que se ejecuten en el orden correcto
-
+app.use(express.json()); 
+app.use('/users', require('./routes/users.router'));
+app.use('/posts', require('./routes/posts.router'));
 
 app.get('/', (request, response) => {
     response.json({ message: 'devToClone API' });
