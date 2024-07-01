@@ -7,6 +7,7 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json()); 
 app.use('/users', require('./routes/users.router'));
+app.use('/auth', require('./routes/auth.router'));
 app.use('/posts', require('./routes/posts.router'));
 
 app.get('/', (request, response) => {
